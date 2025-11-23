@@ -1,14 +1,10 @@
-package com.mapstruct.dto.request;
+package com.mapstruct.dto.response;
 
 import jakarta.validation.constraints.NotBlank;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
-@Getter
-@Setter
-@ToString
-public class StudentRequest {
+public class StudentResponse {
+
+    private Long id;
 
     @NotBlank(message = "Username is not null.")
     private String userName;
